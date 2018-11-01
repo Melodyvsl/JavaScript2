@@ -45,3 +45,19 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+
+// change MIN to HOUR
+
+ let changedDuration = tasks.map( tasks  => tasks.duration /= 60);
+ console.log(changedDuration);
+
+// Filter out everything that took less than two hours
+
+let filterDUration = changedDuration.filter( changedDuration => changedDuration >= 2);
+console.log (filterDUration);
+
+// Multiply the each duration by a per-hour rate for billing and sum it all up.
+
+let financial = changedDuration.map(changedDuration => changedDuration *= 30).reduce((total, amount) => total += amount);
+console.log(" Maartje should earn " + financial + "€");
+
