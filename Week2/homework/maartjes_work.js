@@ -53,7 +53,7 @@ const tasks = monday.concat(tuesday);
 
 // Filter out everything that took less than two hours
 
-let filterDUration = changedDuration.filter( changedDuration => changedDuration >= 2);
+let filterDuration = changedDuration.filter( changedDuration => changedDuration >= 2);
 console.log (filterDUration);
 
 // Multiply the each duration by a per-hour rate for billing and sum it all up.
