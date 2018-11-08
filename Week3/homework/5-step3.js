@@ -1,5 +1,7 @@
 
 // step 3 => 5
+
+
 function multiplyAll(arr) {
     var product = 1;
 

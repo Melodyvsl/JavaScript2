@@ -1,5 +1,6 @@
  // step 3 => 4
 
+ 
  function DOG() {
     this.name = "Fidel";
     this.color = "white";

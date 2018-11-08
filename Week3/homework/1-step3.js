@@ -1,5 +1,5 @@
 'use strict';
-
+ 
 // step 3 => 1 
 function foo(func) {
     func();
