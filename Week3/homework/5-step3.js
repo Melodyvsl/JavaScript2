@@ -1,2 +1,15 @@
-'use strict';
-// paste your freeCodeCamp solutions in here
+
+// step 3 => 5
+function multiplyAll(arr) {
+    var product = 1;
+
+    for (var i=0; i < arr.length; i++) {
+    for (var j=0; j < arr[i].length; j++) {
+      console.log(product*arr[i][j]);
+    }
+  }
+
+    return product;
+  }
+  
+  multiplyAll([[1,2],[3,4],[5,6,7]]);

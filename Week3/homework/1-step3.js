@@ -1,11 +1,13 @@
 'use strict';
 
+// step 3 => 1 
 function foo(func) {
-  // What to do here? 
-}
+    func();
+  }
+  
+  function bar() {
+    console.log('Hello, I am bar!');
+  }
+  
+  foo(bar);
 
-function bar() {
-  console.log('Hello, I am bar!');
-}
-
-foo(bar);
