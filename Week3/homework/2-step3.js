@@ -1,3 +1,4 @@
+
 // step 3 => 2
 
   function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
@@ -8,7 +9,13 @@
   
     values.forEach(function (x) {
       
-       if (x % 3 === 0) {
+
+        if ((x % 5 === 0) && (x % 3 === 0)) {
+        console.log("value = " + x)
+        fiveCallback()
+        threeCallback();
+     }
+      else if (x % 3 === 0) {
         console.log("value = " + x);
         threeCallback();
      }
@@ -16,10 +23,7 @@
          console.log("value = " + x);
          fiveCallback();
      }
-      else  if ((x % 5 === 0) && (x % 3 === 0)) {
-        console.log("value = " + x)
-        fiveCallback() && threeCallback();
-     }
+ 
        
     });
   }
